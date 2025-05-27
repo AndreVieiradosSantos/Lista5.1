@@ -42,15 +42,15 @@ public class Main {
                     break;
                 case 3:
                     System.out.println("Digite o nome do aluno a ser removido:");
-                    String itemRemovido = aluno.nextLine();
+                    String alunoRemovido = aluno.nextLine();
                     for(int i=0;i< alunos.size();i++){
                         Aluno aluno1 = alunos.get(i);
-                        if(aluno1.getNomeAluno().equals(itemRemovido)){
+                        if(aluno1.getNomeAluno().equals(alunoRemovido)){
                             alunos.remove(i);
                             break;
                         }
                     }
-                    System.out.println("Aluno removido:"+itemRemovido);
+                    System.out.println("Aluno removido:"+alunoRemovido);
                     System.out.println(alunos);
 
                     break;
